@@ -1,0 +1,29 @@
+<!--<p>-->
+<!--  <strong>ImagePath:</strong>-->
+<!--  <img src="<%= @image.image_path %>" width='100%'/>-->
+<!--</p>-->
+
+<!--<p>-->
+<!--  <strong>Thumb Fill:</strong>-->
+<!--  <img src="<%= @image.image_path.thumb_fill.url %>" />-->
+<!--</p>-->
+
+<form class="text-right img_fill">
+  <strong>Thumb Fit:</strong>
+  <span class="a" ><img src="<%= @image.image_path.thumb_fit.url %>" /></span>
+  <button data-id="<%=@image.id %>" class="btn btn-info remove-img">배경 삭제</button>
+</form>
+
+<li class="comment-<%= @image.id%> list-group-item d-flex justify-content-between">
+    <span class="comment-detail-<%= @image.id %>"><img src="<%= @image.image_path.thumb_fit.url %>" /></span>
+</li>
+
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>
+
+
+<script>
+
+
+
+</script>

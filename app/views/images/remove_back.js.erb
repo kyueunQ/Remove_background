@@ -1,0 +1,8 @@
+$('.img_fill').prepend(`
+<li class="comment-<%= @image.id%> list-group-item d-flex justify-content-between">
+    <span class="comment-detail-<%= @image.id %>"><%= @image.contents %></span>
+</li>`);
+    
+alert("뒷배경이 제거됐습니다.");
+
+
